@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+    .dropbtn {
+    background-color: rgb(47, 255, 54);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(47, 255, 54);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 14px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #4CAF50
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: skyblue;
+        text-align: center;
+    }
+    ul:after{
+        content:'';
+        display: block;
+        clear:both;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        color: #4CAF50;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+    .active {
+        background-color: rgb(108, 255, 113);
+    }
+    a:link, a:visited {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+
+</style>
+</head>
+<body>
+        <ul>
+        <div class="dropdown">
+                <button class="dropbtn"><a href="1.html" target="_self">건물</a></button>
+                <div class="dropdown-content">
+                </div>
+                <br>
+        </div>
+        <div class="dropdown">
+                <button class="dropbtn"><a href="2.html" target="_self">학부</a></button>
+                <div class="dropdown-content">
+                        <a href="#">GLS</a>
+                        <a href="#">국제어문학부</a>
+                        <a href="#">법학부</a>
+                        <a href="#">언론정보문화학부</a>
+                        <a href="#">공간환경시스템공학부</a>
+                        <a href="#">기계제어공학부</a>
+                        <a href="#">생명과학부</a>
+                        <a href="#">콘텐츠융합디자인학부</a>
+                        <a href="#">상담심리사회복지학부</a>
+                        <a href="#">전산전자학부</a>
+                        <a href="#">ICT창업학부</a>
+                        <a href="#">창의융합교육원</a>
+                      </div>
+                <br>
+        </div>
+        <div class="dropdown">
+                <button class="dropbtn"><a href="test.html" target="_self">동아리</a></button>
+                <div class="dropdown-content">
+                        <a href="armstrong.html">암스트롱</a>
+                        <a href="pitchpipe.html">피치파이프</a>
+                        <a href="northkorea.html">너나들이</a>
+                        <a href="hallucination.html">할루시네이션</a>
+                        <a href="amazingstory.html">어메이징스토리</a>
+                      </div>
+        </div>
+    </ul>
+</body>
+</html>

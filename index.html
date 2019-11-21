@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    body{
+  font-family:'Open Sans', sans-serif;
+  background: linear-gradient(to right, powderblue, rgb(255, 237, 240));;
+  width:90%;
+  margin:0 auto;
+  padding:2em 0 6em;
+}
+h1:before{
+  content: "// ";
+}
+h1{
+  font-size:2em;
+  color:#fefefe;
+  text-transform:lowercase;
+}
+.wrapper1{
+  margin:1em 0;
+  text-align: center;
+}
+.wrapper2{
+  margin:2em 0;
+  text-align: left;
+  
+}
+.wrapper3{
+  margin:3em 0;
+  text-align: right;
+}
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+	color:#1221ec;
+	font-size:3em;
+}
+
+a:hover{
+	color:#fffb07;
+}
+a.before:before,a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+a.before:before{
+  top:-0.25em;
+}
+a.after:after{
+  bottom:-0.25em;
+}
+a.before:before,a.after:after{
+  height:5px;
+  height:0.35rem;
+  width:0;
+  background:#0efabf;
+}
+    .wrapper{
+  margin:2em 0;
+}
+a.third:after,a.sixth:before,a.sixth:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+          
+}
+a.before:hover:before,a.after:hover:after{
+  width:100%;
+}
+.headtitle{
+  font-size:2em;
+}
+.gradient{
+  animation: flow 15s ease-in-out infinite;
+  background : linear-gradient(-60deg,rgb(34, 252, 215),rgb(230, 255, 90),rgba(255, 81, 0, 0.267),rgb(10, 113, 247));
+  background-size: 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4em;
+  text-align: center;
+  }
+@keyframes flow{
+  0% {
+background-position: 0 50%;
+  }
+  50% {
+background-position: 100% 50%;
+  }
+  100% {
+background-position: 0 50%;
+  }
+}
+</style>
+</head>
+<body>
+    <p class="gradient"> 한동새내기 길라잡이</p></a>
+        <div class="wrapper1">
+                <a class="third after" href="1.html">건물</a>
+              </div>
+              <div class="wrapper1">
+                  <a class="third after" href="2.html">학부</a>
+              </div>
+                <div class="wrapper1">
+                    <a class="third after" href="test.html">동아리</a>
+                  </div>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+  
+<style>
+  a {
+        text-decoration: none;
+  }
+
+.btn-submit
+{
+    padding: 10px 60px;
+    background: #9e9a91;
+    border: #8c8880 1px solid;
+    color: #ffffff;
+    font-size: 0.9em;
+    border-radius: 2px;
+    cursor: pointer;
+    align: center;
+}
+
+.slideshow-container {
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    margin: auto
+}
+
+.mySlides {
+    display: none;
+  height: 300px;
+  border: solid 1px black;
+     
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: orangered;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.text1 {
+    color:black;
+    font-size: 15px;
+    padding-top: 12px;
+  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
+}
+</style>
+</head>
+<body bgcolor="orange"><br><br><br><br><br><br><br><br>
+        <div class="slideshow-container">
+                <div class="slideshow-inner">
+                  <div class="mySlides fade">
+                
+                    <a href="pitchpipe.html"><img src="pitchpipe.jpeg" style='width: 100%;' alt="sally lightfoot crab"/>
+                    <div class="text1">피치파이프</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                
+                    <a href="hallucination.html"><img  src="hallucination.png" style='width: 100%;' alt="fighting nazca boobies"/></a>
+                    <div class="text">할루시네이션</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                
+                    <a href="amazingstory.html"><img  src="amazingstory.png" style='width: 100%;' alt="otovalo waterfall"/>
+                    <div class="text">어메이징 스토리</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                
+                    <a href="armstrong.html"><img  src="armstrong.png" style='width: 100%;' alt="pelican"/>
+                    <div class="text1">암스트롱</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                
+                    <a href="northkorea.html"><img  src="northkorea.jpg" style='width: 100%;' alt="pelican"/>
+                    <div class="text1">너나들이</div>
+                  </div>
+                  
+                  </div>
+                
+                
+                  <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+                  <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+                </div>
+                <br/>
+                
+                
+                <div style='text-align: center;'>
+                  <span class="dot" onclick='currentSlide(1)'></span>
+                  <span class="dot" onclick='currentSlide(2)'></span>
+                  <span class="dot" onclick='currentSlide(3)'></span>
+                  <span class="dot" onclick='currentSlide(4)'></span>
+                  <span class="dot" onclick='currentSlide(5)'></span>
+                </div>
+                
+                </div><br><br>
+                
+                <a href="index.html"> <p style="text-align:center">첫화면으로</p> </a>
+
+<script>
+var slideIndex = 1;
+var timer = null;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  clearTimeout(timer);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n==undefined){n = ++slideIndex}
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  timer = setTimeout(showSlides, 5000);
+} 
+
+
+
+
+</script>
+
+</body>
+</html> 
+            
