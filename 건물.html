@@ -3,7 +3,7 @@
 <head>
     <style type="text/css">
     .dropbtn {
-    background-color: rgb(47, 255, 54);
+    background-color: #4CAF50;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -17,8 +17,8 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(47, 255, 54);
-    min-width: 200px;
+    background-color: #f9f9f9;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -29,7 +29,7 @@
     display: block;
 }
 .dropdown-content a:hover {
-    background-color: #4CAF50
+    background-color: #f1f1f1
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -55,7 +55,7 @@
     }
     li a {
         display: block;
-        color: #4CAF50;
+        color: white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -64,20 +64,17 @@
         background-color: #111;
     }
     .active {
-        background-color: rgb(108, 255, 113);
+        background-color: #4CAF50;
     }
-    a:link, a:visited {
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
+    a1:link {
   text-decoration: none;
-  display: inline-block;
+  color: rgb(255, 255, 255);
 }
-img {
-    display: block;
-    margin: 0px auto;
-  height: auto;
-} 
+
+a1:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 
 
 
@@ -86,13 +83,13 @@ img {
 <body>
         <ul>
         <div class="dropdown">
-                <button class="dropbtn"><a href="1.html" target="_self">건물</a></button>
+                <button class="dropbtn"><a1 href="건물.html" target="#">건물</a1></button>
                 <div class="dropdown-content">
                 </div>
                 <br>
         </div>
         <div class="dropdown">
-                <button class="dropbtn"><a href="2.html" target="_self">학부</a></button>
+                <button class="dropbtn"><a1 href="학부.html" target="#">학부</a1></button>
                 <div class="dropdown-content">
                         <a href="#">GLS</a>
                         <a href="#">국제어문학부</a>
@@ -110,25 +107,15 @@ img {
                 <br>
         </div>
         <div class="dropdown">
-                <button class="dropbtn"><a href="test.html" target="_self">동아리</a></button>
+                <button class="dropbtn"><a1 href="동아리.html" target="#">동아리</a1></button>
                 <div class="dropdown-content">
-                        <a href="armstrong.html">암스트롱</a>
-                        <a href="pitchpipe.html">피치파이프</a>
-                        <a href="northkorea.html">너나들이</a>
-                        <a href="hallucination.html">할루시네이션</a>
-                        <a href="amazingstory.html">어메이징스토리</a>
+                        <a href="#">암스트롱</a>
+                        <a href="#">피치파이프</a>
+                        <a href="#">너나들이</a>
+                        <a href="#">할루시네이션</a>
+                        <a href="#">어메이징스토리</a>
                       </div>
         </div>
     </ul>
-    <img src="picture.png" usemap="#handong">>
-    <map name="handong">
-        <area shape="poly" coords="158,214,238,236,256,184,275,188,250,262,150,233,150,233"  href="느헤미야.html" onfocus="this.blur()" target=_blank>
-        <area shape="poly" coords="616,325,698,351,637,557,541,540,576,433"  href="기숙사.html" onfocus="this.blur()"target=_blank>
-        <area shape="poly" coords="131,273,231,302,227,322,148,298,115,387,90,378,127,271"  href="뉴턴홀.html" onfocus="this.blur()"target=_blank>
-        <area shape="poly" coords="202,417,177,408,190,339,205,327,226,335"  href="오석관.html" onfocus="this.blur()"target=_blank>
-        <area shape="poly" coords="312,177,412,209,390,279,366,269,377,222,305,201"  href="현동홀.html" onfocus="this.blur()"target=_blank>
-        <area shape="poly" coords="393,381,416,384,439,377,455,401,481,410,467,457,448,451,445,468,386,450,390,434,373,430,387,378"  href="학생회관.html" onfocus="this.blur()" target=_blank>
-        <area shape="poly" coords="531,141,568,151,565,171,522,160,525,150"  href="process.html" onfocus="this.blur()"target=_blank>
-      </map>
 </body>
 </html>
