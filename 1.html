@@ -82,6 +82,17 @@ img {
 
 
 </style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+<script type="text/javascript" src="http://davidlynch.org/projects/maphilight/jquery.maphilight.min.js"></script>
+
+<script type="text/javascript">$(function() {
+
+    $('.map').maphilight();
+    });
+
+</script>
+
 </head>
 <body>
         <ul>
@@ -120,9 +131,10 @@ img {
                       </div>
         </div>
     </ul>
-    <img src="picture.png" usemap="#handong">>
+    <div style="margin:auto; width:65%;">
+    <img class="map" src="picture.png" usemap="#handong" >
     <map name="handong">
-        <area shape="poly" coords="158,214,238,236,256,184,275,188,250,262,150,233,150,233"  href="느헤미야.html" onfocus="this.blur()" target=_blank>
+        <area shape="poly" coords="158,214,238,236,256,184,275,188,250,262,150,233,150,233" href="느헤미야.html" onfocus="this.blur()" target=_blank>
         <area shape="poly" coords="616,325,698,351,637,557,541,540,576,433"  href="기숙사.html" onfocus="this.blur()"target=_blank>
         <area shape="poly" coords="131,273,231,302,227,322,148,298,115,387,90,378,127,271"  href="뉴턴홀.html" onfocus="this.blur()"target=_blank>
         <area shape="poly" coords="202,417,177,408,190,339,205,327,226,335"  href="오석관.html" onfocus="this.blur()"target=_blank>
@@ -130,5 +142,6 @@ img {
         <area shape="poly" coords="393,381,416,384,439,377,455,401,481,410,467,457,448,451,445,468,386,450,390,434,373,430,387,378"  href="학생회관.html" onfocus="this.blur()" target=_blank>
         <area shape="poly" coords="531,141,568,151,565,171,522,160,525,150"  href="process.html" onfocus="this.blur()"target=_blank>
       </map>
+      </div>
 </body>
 </html>
