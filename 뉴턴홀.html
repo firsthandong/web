@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+    <style type="text/css">
+    @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+    .jg{
+      font-family: 'Jeju Gothic', sans-serif;
+      text-align: center;
+      font-size: 2.5em;
+      }
+
+      .dropbtn {
+      background-color: #FFBC5A;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #548235;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  .dropdown-content a {
+      color: black;
+      padding: 12px 14px;
+      text-decoration: none;
+      display: block;
+  }
+  .dropdown-content a:hover {
+      background-color: #62973e
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .dropdown:hover .dropbtn {
+      background-color:#548235;
+  }
+  
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          background-color: #FFBC5A;
+          text-align: center;
+      }
+      ul:after{
+          content:'';
+          display: block;
+          clear:both;
+      }
+      li {
+          float: left;
+      }
+      li a {
+          display: block;
+          color: #4CAF50;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      li a:hover:not(.active) {
+          background-color: #111;
+      }
+      .active {
+          background-color: rgb(108, 255, 113);
+      }
+      a:link, a:visited {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
 .container {
   position: relative;
   width: 30%;
+  margin: auto;
 }
 
 .image {
@@ -32,9 +109,46 @@
 
 </style>
 </head>
-<body>
-
-<h2>Fade in Overlay</h2>
+<body bgcolor="#FFCA7D">
+    <ul>
+        <div class="dropdown" style="float: left;">
+                        <a href="index.html">
+                        <img src="logo.png"></a>
+        </div>
+        <div class="dropdown">
+                <button class="dropbtn"><a href="1.html" target="_self">건물</a></button>
+                <br>
+        </div>
+        <div class="dropdown">
+                <button class="dropbtn"><a href="2.html" target="_self">학부</a></button>
+                <div class="dropdown-content">
+                        <a href="GLS.html">GLS</a>
+                        <a href="language.html">국제어문학부</a>
+                        <a href="law.html">법학부</a>
+                        <a href="information.html">언론정보문화학부</a>
+                        <a href="space.html">공간환경시스템공학부</a>
+                        <a href="machine.html">기계제어공학부</a>
+                        <a href="life.html">생명과학부</a>
+                        <a href="design.html">콘텐츠융합디자인학부</a>
+                        <a href="psychology.html">상담심리사회복지학부</a>
+                        <a href="electricity.html">전산전자학부</a>
+                        <a href="GE.html">ICT창업학부</a>
+                        <a href="business.html">경영경제학부</a>
+                      </div>
+                <br>
+        </div>
+        <div class="dropdown">
+                <button class="dropbtn"><a href="test.html" target="_self">동아리</a></button>
+                <div class="dropdown-content">
+                        <a href="armstrong.html">암스트롱</a>
+                        <a href="pitchpipe.html">피치파이프</a>
+                        <a href="northkorea.html">너나들이</a>
+                        <a href="hallucination.html">할루시네이션</a>
+                        <a href="amazingstory.html">어메이징스토리</a>
+                      </div>
+        </div>
+    </ul>
+    <p class="jg">뉴턴홀(NTH)</p>
 
 <div class="container">
   <img src="4.jpg" alt="Avatar" class="image">
@@ -42,5 +156,11 @@
   <img src="4-1.jpg" alt="Avatar" class="image">
   </div>
 </div>
+<h4>
+    하나님의 존재를 인정하고 그것을 바탕으로 과학을 연구한 공학자 ‘뉴턴’을 닮은 많은 과학자가 양성되길 바라는 마음을 담아 이름을 지은 건물 <br><br>
+    24시간 불이 꺼지지 않는 공대 건물로 유명함 <br><br>
+    뉴턴홀에서 수업이 진행되는 학부: 기계제어공학부, 전산전자공학부, 공간환경시스템공학부
+    
+</h4>
 </body>
 </html>

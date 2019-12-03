@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+    <style type="text/css">
+    @import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+    .jg{
+      font-family: 'Jeju Gothic', sans-serif;
+      text-align: center;
+      font-size: 2.5em;
+      }
+
+      .dropbtn {
+      background-color: #FFBC5A;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #548235;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  .dropdown-content a {
+      color: black;
+      padding: 12px 14px;
+      text-decoration: none;
+      display: block;
+  }
+  .dropdown-content a:hover {
+      background-color: #62973e
+  }
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  .dropdown:hover .dropbtn {
+      background-color:#548235;
+  }
+  
+      ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          background-color: #FFBC5A;
+          text-align: center;
+      }
+      ul:after{
+          content:'';
+          display: block;
+          clear:both;
+      }
+      li {
+          float: left;
+      }
+      li a {
+          display: block;
+          color: #4CAF50;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      li a:hover:not(.active) {
+          background-color: #111;
+      }
+      .active {
+          background-color: rgb(108, 255, 113);
+      }
+      a:link, a:visited {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+    }
 .container {
   position: relative;
   width: 30%;
+  margin: auto;
 }
 
 .image {
@@ -32,9 +109,46 @@
 
 </style>
 </head>
-<body>
-
-<h2>Fade in Overlay</h2>
+<body bgcolor="#FFCA7D">
+    <ul>
+        <div class="dropdown" style="float: left;">
+                        <a href="index.html">
+                        <img src="logo.png"></a>
+        </div>
+        <div class="dropdown">
+                <button class="dropbtn"><a href="1.html" target="_self">건물</a></button>
+                <br>
+        </div>
+        <div class="dropdown">
+                <button class="dropbtn"><a href="2.html" target="_self">학부</a></button>
+                <div class="dropdown-content">
+                        <a href="GLS.html">GLS</a>
+                        <a href="language.html">국제어문학부</a>
+                        <a href="law.html">법학부</a>
+                        <a href="information.html">언론정보문화학부</a>
+                        <a href="space.html">공간환경시스템공학부</a>
+                        <a href="machine.html">기계제어공학부</a>
+                        <a href="life.html">생명과학부</a>
+                        <a href="design.html">콘텐츠융합디자인학부</a>
+                        <a href="psychology.html">상담심리사회복지학부</a>
+                        <a href="electricity.html">전산전자학부</a>
+                        <a href="GE.html">ICT창업학부</a>
+                        <a href="business.html">경영경제학부</a>
+                      </div>
+                <br>
+        </div>
+        <div class="dropdown">
+                <button class="dropbtn"><a href="test.html" target="_self">동아리</a></button>
+                <div class="dropdown-content">
+                        <a href="armstrong.html">암스트롱</a>
+                        <a href="pitchpipe.html">피치파이프</a>
+                        <a href="northkorea.html">너나들이</a>
+                        <a href="hallucination.html">할루시네이션</a>
+                        <a href="amazingstory.html">어메이징스토리</a>
+                      </div>
+        </div>
+    </ul>
+    <p class="jg">기숙사 </p>
 
 <div class="container">
   <img src="1.jpg" alt="Avatar" class="image">
@@ -42,5 +156,99 @@
   <img src="1-1.jpg" alt="Avatar" class="image">
   </div>
 </div>
+<h4>
+    한동대학교 기숙사는 ‘기숙사’가 아니라, ‘생활관’입니다. 단지 자고, 옷을 갈아입고, 거주하는 기숙사가 아니라 배려와 협동을 배우며 함께 조화롭게 생활하는 곳이기 때문이에요. 비전관, 창조관, 벧엘관, 로뎀관, 국제관, 은혜관, 하용조관으로 총 7개로 구성이 되어있구요, 창조관을 제외하고 4인 1실로 구성되어 있습니다.
+    한동인들은 룸메이트를 방순이, 방돌이라고 부릅니다. 처음엔 다소 촌스럽게 느껴질수도 있지만, 서로 친자매, 형제 같이 친근하게 지내기 때문에 그 느낌을 더 살리고 싶어서 저렇게 부른답니다!
+    방은 매 학기마다 바뀌는데요, 이 때문에 가족 같은 사람들을 좀 더 많이, 다양하게 만날 수 있게 됩니다. <br><br><br>
+    1. 토레이 RC(비전관):<br><br>
+    대천덕 신부님을 본받아 이름지어짐
+    핵심 가치: 일치, 관계, 공동체, 자치<br><br>
+    RC행사<br><br>
+    	문화의 밤: 노래, 춤 등으로 학생들의 끼를 발산하여 친목과 화합을 위한 행사 <br>
+    	달달한 토레이: 토레이 RC의 핵심가치를 실천하는 친구를 엽서로 추천하는 프로그램 <br>
+    	토토풋: 토레이 RC 학생끼리 팀을 이루어 풋살 경기를 하는 행사 <br><br>
+    비전관 정보:<br><br>
+    	사용인원: 4인 1실<br>
+    	층수: 4층(2,3층 남자, 1,4,5층 여자) 생활관 운영팀, 코이노니아실(각종 모임 장소) 위치. 지하 1층에는 헬스장, 자치회실, 열람실 위치<br><br>
+    특이사항<br><br>
+    	엘리베이터 없음<br>
+    	리모델링 후 편리한 샤워시설<br>
+    	새로 바꾼 깨끗한 가구<br>
+    	최초로 RC제도를 적용한 생활관<br><br>
+    2. 장기려 RC(은혜관)<br><br>
+    장기려 박사님을 본받아 이름지어짐
+    핵심 가치: 섬김과 나눔의 삶을 배우는 공동체<br><br>
+    RC행사<br><br>
+    	시나브로: 휴게실을 카페 형식으로 바꿔 학생들이 공연하는 행사<br>
+    	샘물 호스피스 방문: 장기려RC의 핵심가치를 실천하고자 샘물 호스피스 방문<br>
+    	레드 클로즈데이: 장기려RC 대표 색인 빨간색이 포함된 옷을 입고 사진을 찍음<br><br>
+    은혜관 정보<br><br>
+    	사용인원: 4인 1실<br>
+    	층수: 5층(1~3층: 여자, 4~5층: 남자) 층마다 휴게실 위치<br><br>
+    특이사항<br><br>
+    	엘리베이터 있음(4, 5층만 사용 가능)<br>
+    	남녀 공용 휴게실(아름드리) 있음<br>
+    	샤워시설과 화장실, 휴게실이 넓고 좋음<br>
+    	스터디실 있음<br><br>
+    3. 카이퍼 RC(하용조관)<br><br>
+    Abraham Kuyper의 뜻을 이어받고자 이름지어짐
+    핵심가치: Lordship(삶의 모든 영역에서의 하나님의 주권)<br><br>
+    RC행사<br><br>
+    	블루데이: 카이퍼RC 대표 색인 파란색이 포함된 옷을 입고 사진찍는 행사<br>
+    	향기인카이퍼: 여학우들을 위한 문화행사로 미적인 것에 관한 특강을 들음<br>
+    	카이퍼 사진전: 한 학기동안 팀 사람들과 보낸 추억을 회상토록 해주는 사진전<br><br>
+    하용조관 정보:<br><br>
+    	사용인원: 4인 1실<br>
+    	층수: 10층(3~6층: 남자, 7~10층: 여자) 1,2층에는 세미나실 위치, 층마다 휴게실, 셀모임 실, 기도실 위치<br><br>
+    특이사항<br><br>
+    	엘리베이터 있음(남, 여 각 1개)<br>
+    	방 내부에 화장실 및 세면실, 샤워실 각각 위치<br>
+    	일자형과 ㄷ 자형 구조 방 있음<br>
+    	편의시설이 가까이 위치해 생활하기 편리<br><br>
+    4. 카마이클 RC(국제관)<br><br>
+    Amy Carmichael 선교사의 뜻을 이어받고자 이름지어짐
+    핵심가치: 봉사와 헌신의 삶을 배우는 공동체<br><br>
+    RC행사<br><br>
+    	 Sports day: 스포츠를 통해 함께 모여 결속력을 다지는 시간<br>
+    	Culture night: 카마이클 구성원들의 출신 국가의 문화와 음식을 공유하는 행사<br>
+    	End of the Semester Banquet: 학기 말 다 함께 연회장에서 파티를 즐김<br><br>
+    국제관 정보<br><br>
+    	사용인원: 4인 1실<br>
+    	층수: 4층(1~2층: 남자, 3~4층: 여자) 층마다 휴게실 위치, 4층에 코이노니아실 위치<br><br>
+    특이사항<br><br>
+    	엘리베이터 없음<br>
+    	방 내부에 화장실 및 세면실, 샤워실 위치<br>
+    	외국인 친구들과 함께 생활할 수 있음<br>
+    	유일하게 취사실 있음<br>
+    	넓은 방<br><br>
+    5. 손양원 RC(벧엘관)<br><br>
+    손양원 목사님을 본받아 이름지어짐
+    핵심가치: 진리 안에서 자유함, 사랑의 실천, 용서와 화합<br><br>
+    RC행사<br><br>
+    	애양원 방문: 손양원 목사님의 사역지인 애양원에 방문하는 1박 2일 프로그램<br>
+    	S맨을 찾아라: 축제기간 손양원 학생들을 찾아 인사를 하고 사진을 찍는 프로그램<br>
+    	화목한 건빵데이: 행정실에서 건빵을 주어 방 사람들끼리 함께 먹으며 친밀감을 느낌<br><br>
+    벧엘관 정보<br><br>
+    	사용인원: 4인 1실<br>
+    	층수: 6층(1~3층: 남자, 4~6층: 여자) 1층에는 피자가게, 코이노니아실 등이 있음<br><br>
+    특이사항:<br><br>
+    	엘리베이터 있음(남, 여 각 1개)<br>
+    	휴게실이 넓고 좋음<br>
+    	침대와 분리가능한 책상과 넓은 방<br>
+    	매점, 피자가게와 가까움<br>
+    	행복관을 제외하고 가장 최근에 지어진 생활관<br><br>
+    6. 열송학사 RC(로뎀괸)<br><br>
+    사용인원: 4인 1실<br>
+    층수: 5층(1-2층: 남자, 3-5층: 여자)<br>
+    지하 1층에는 탁구장과 당구대 위치<br>
+    1층 코이노니아 위치<br><br>
+    특이사항:<br><br>
+    엘리베이터 없음<br>
+    새로 바꾼 깨끗한 가구<br>
+    생활관의 중심에 위치해 생활하기 편리함<br>
+    지하에 탁구대와 당구대가 있어 운동하기 좋음<br>
+    
+    
+</h4>
 </body>
 </html>

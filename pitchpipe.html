@@ -2,7 +2,76 @@
 <head> 
   <!-- 합쳐지고 최소화된 최신 CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<style> 
+<style type="text/css">
+  .dropbtn {
+  background-color: #FFBC5A;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #548235;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 14px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #62973e
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color:#548235;
+}
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #FFBC5A;
+      text-align: center;
+  }
+  ul:after{
+      content:'';
+      display: block;
+      clear:both;
+  }
+  li {
+      float: left;
+  }
+  li a {
+      display: block;
+      color: #4CAF50;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  li a:hover:not(.active) {
+      background-color: #111;
+  }
+  .active {
+      background-color: rgb(108, 255, 113);
+  }
+  a:link, a:visited {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
 .row > .column {
   padding: 0 8px;
 }
@@ -174,6 +243,12 @@ body {background-color:orange;}
           }
         }
 </style> </head>
+<ul>
+    <div class="dropdown">
+                    <a href="index.html">
+                    <img src="logo.png"></a>
+    </div>
+    </ul>
 <title> 피치파이프 </title>
 <div class="navbar">
         <a class="active" href="pitchpipe.html">피치파이프</a>

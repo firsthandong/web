@@ -4,13 +4,13 @@
         <html>
         <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
+        <style type="text/css">
               img {
   float: left;
 }
 
     .dropbtn {
-    background-color: rgb(47, 255, 54);
+    background-color: #FFBC5A;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -24,7 +24,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(47, 255, 54);
+    background-color: #548235;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -36,20 +36,20 @@
     display: block;
 }
 .dropdown-content a:hover {
-    background-color: #4CAF50
+    background-color: #62973e
 }
 .dropdown:hover .dropdown-content {
     display: block;
 }
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color:#548235;
 }
 
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        background-color: skyblue;
+        background-color: #FFBC5A;
         text-align: center;
     }
     ul:after{
@@ -74,17 +74,10 @@
         background-color: rgb(108, 255, 113);
     }
     a:link, a:visited {
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-img {
-    display: block;
-    margin: 0px auto;
-  height: auto;
-} 
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
         * {box-sizing: border-box}
         body {font-family: "Lato", sans-serif;}
         
@@ -118,7 +111,7 @@ img {
         
         /* Create an active/current "tab button" class */
         .tab button.active {
-          background-color: rgb(21, 23, 182));
+          background-color: rgb(21, 23, 182);
         }
         
         /* Style the tab content */
@@ -142,6 +135,10 @@ img {
         </head>
         <body>
             <ul>
+                <div class="dropdown" style="float: left;">
+                                <a href="index.html">
+                                <img src="logo.png"></a>
+                </div>
                 <div class="dropdown">
                         <button class="dropbtn"><a href="1.html" target="_self">건물</a></button>
                         <div class="dropdown-content">
